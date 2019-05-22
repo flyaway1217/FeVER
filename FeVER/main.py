@@ -7,13 +7,14 @@
 # Python release: 3.4.5
 #
 # Date: 2017-03-08 13:10:47
-# Last modified: 2019-04-05 09:55:15
+# Last modified: 2019-05-22 13:37:00
 
 """
 The main entrance of the WSABIE model.
 """
 
 import logging
+import argparse
 # import os
 
 import ExAssist as EA
@@ -131,10 +132,11 @@ def generation(args):
         args)
 
 
-def main():
+def main(config_path):
     assist = EA.getAssist('GEL')
-    assist.config_file = './config.ini'
+    assist.config_path = config_path
     with EA.start(assist) as assist:
+        # print(assist.config['common'])
         config = Config(assist.config)
         Logger.initLogger(config.model_file+'.log')
         if config.mode == 'train':
@@ -149,5 +151,8 @@ def main():
 if __name__ == '__main__':
     # import cProfile
     # cProfile.run('main()',  sort='cumulative')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('config_path', type=str)
+    args = parser.parse_args()
     torch.multiprocessing.set_sharing_strategy('file_system')
-    main()
+    main(args.config_path)
