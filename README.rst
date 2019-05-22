@@ -29,7 +29,7 @@ In this subsection, a small example is used to show how to use this repository.
 The behavior of our code is controlled by a config file.
 After installation, you can directly run our code like:
 
-.. code:: consol
+.. code:: console
 
     python FeVER/main.py example/config.ini
 
