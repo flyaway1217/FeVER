@@ -52,10 +52,10 @@ Training files
 To train the feature embeddings based on multi-label classification, you need to prepare three files:
 
 1. ``context_feature_training.txt``: This file contains all training data in
-  format of multi-label_ data. It contains the predicting word index and
-  features of the context (output of psi function in the paper). Each word is
-  mapped to an index by the ``vocabulary.txt`` file. A file contains following
-  content:
+   format of multi-label_ data. It contains the predicting word index and
+   features of the context (output of psi function in the paper). Each word is
+   mapped to an index by the ``vocabulary.txt`` file. A file contains following
+   content:
 
 .. code:: console
 
@@ -97,7 +97,6 @@ After training, the model needs feature files to extract word embeddings.
 Be note, here we can use different vocabulary as long as we can extract feature
 from this vocabulary.
 feature files are in the same format as ``label_feature_training.txt``.
-
 
 .. _ExAssist: https://exassist.readthedocs.io/en/latest/
 .. _multi-label: http://manikvarma.org/downloads/XC/XMLRepository.html
