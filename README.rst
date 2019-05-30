@@ -52,7 +52,6 @@ Training files
 - ``context_feature_training.txt``: This file contains all training data in
   format of multi-label_ data.Each word is mapped to an index by the
   ``vocabulary.txt`` file. A file contains following content:
-
     .. code:: console
 
         2 4 3
