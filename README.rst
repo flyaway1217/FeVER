@@ -11,7 +11,7 @@ Overview
 
 The input of this implementation is not the pure text.
 Instead, a multi-label data format is used as the input of our system.
-Because of this, we need to preprocess the text into a suitable format, which is described in Dataset_.
+Because of this, we need to preprocess the text into a suitable format, which is described in `Dataset`_.
 
 Installation
 ~~~~~~~~~~~~
@@ -43,7 +43,7 @@ After installation, you can directly run our code like:
 
 ``config.ini`` file contains all the configuation for running.
 
-.. _Dataset:
+Dataset
 -------
 
 A toy dataset is stored in the ``example/toy``.
