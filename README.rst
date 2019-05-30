@@ -52,14 +52,21 @@ Training files
 - ``context_feature_training.txt``: This file contains all training data in
   format of multi-label_ data.Each word is mapped to an index by the
   ``vocabulary.txt`` file. A file contains following content:
+
 .. code:: console
 
     2 4 3
     idx1, idx2 feat1:1.0 feat2:1.0
     idx1, idx3  feat3:1.0 feat4:1.0
 
-In this file, the first line indicates the number of training examples, features and labels.
-For example, 
+In this file, the first line indicates the number of training examples,
+features and labels.  For example, in this tiny file, it means there are 2
+traiing examples, 4 features in total and at most 3 words.
+Starting from second line, all the content in the file is training examples.
+in this tiny file, second line means word ``idx1`` and ``idx2`` are showed in
+the same context and this context has features ``feat1`` and ``feat2``.
+Third line means word ``idx1`` and ``idx3`` are showed in the same context and
+this context has the features of ``feat3`` and ``feat4``.
 
 
 .. _ExAssist: https://exassist.readthedocs.io/en/latest/
