@@ -51,9 +51,11 @@ Training files
 
 To train the feature embeddings based on multi-label classification, you need to prepare three files:
 
-- ``context_feature_training.txt``: This file contains all training data in
-  format of multi-label_ data.Each word is mapped to an index by the
-  ``vocabulary.txt`` file. A file contains following content:
+1. ``context_feature_training.txt``: This file contains all training data in
+  format of multi-label_ data. It contains the predicting word index and
+  features of the context (output of psi function in the paper). Each word is
+  mapped to an index by the ``vocabulary.txt`` file. A file contains following
+  content:
 
 .. code:: console
 
@@ -69,6 +71,21 @@ Second line means word ``idx1`` and ``idx2`` are showed in
 the same context and this context has features ``feat1`` and ``feat2``.
 Third line means word ``idx1`` and ``idx3`` are showed in the same context and
 this context has the features of ``feat3`` and ``feat4``.
+
+
+2. ``label_feature_training.txt``: This file contains the word features with
+   the same format of ``context_feature_training`` file. Eeah line in the file
+   represents a word in the vocabulary and its features (output of phi
+   function in the paper). Suppose we have tiny file looks like this:
+
+.. code:: console
+
+    3 4 3
+    idx1 feat1:1.0 feat2:1.0
+    idx2 feat3:1.0 feat4:1.0
+    idx3 feat4:1.0 feat5:1.0
+
+In this file, there are 3 words, 4 features. Second line means word ``idx1`` has features ``feat1`` and ``feat2``.
 
 
 .. _ExAssist: https://exassist.readthedocs.io/en/latest/
