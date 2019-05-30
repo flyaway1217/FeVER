@@ -53,8 +53,8 @@ Training files
   format of multi-label_ data.Each word is mapped to an index by the
   ``vocabulary.txt`` file. For example, a file contains following content:
 
+.. code:: console
 
-.. code-block:: console
     idx1, idx2 feat1:1.0 feat2:1.0
     idx1  feat3:1.0 feat2:1.0
 
