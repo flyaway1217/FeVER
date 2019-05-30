@@ -87,6 +87,8 @@ this context has the features of ``feat3`` and ``feat4``.
 
 In this file, there are 3 words, 4 features. Second line means word ``idx1`` has features ``feat1`` and ``feat2``.
 
+3. ``frequency.txt``: This file contains the frequency of each word in the context. Each line in this file is corresponding to each line in the ``context_feature_training.txt`` file.
+
 
 .. _ExAssist: https://exassist.readthedocs.io/en/latest/
 .. _multi-label: http://manikvarma.org/downloads/XC/XMLRepository.html
