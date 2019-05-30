@@ -6,6 +6,13 @@ This repository contains the python implementation of the paper **Beyond Context
 Before Training
 ---------------
 
+Overview
+~~~~~~~~
+
+The input of this implementation is not the pure text.
+Instead, a multi-label data format is used as the input of our system.
+Because of this, we need to preprocess the text into a suitable format, which is described in Dataset_.
+
 Installation
 ~~~~~~~~~~~~
 
@@ -15,6 +22,7 @@ Installation
 .. code:: console
 
     python setup.py develop
+
 
 Tracking Experiments
 ~~~~~~~~~~~~~~~~~~~~
@@ -35,7 +43,7 @@ After installation, you can directly run our code like:
 
 ``config.ini`` file contains all the configuation for running.
 
-Dataset
+.. _Dataset:
 -------
 
 A toy dataset is stored in the ``example/toy``.
