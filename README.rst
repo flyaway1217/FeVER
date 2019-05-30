@@ -90,5 +90,14 @@ In this file, there are 3 words, 4 features. Second line means word ``idx1`` has
 3. ``frequency.txt``: This file contains the frequency of each word in the context. Each line in this file is corresponding to each line in the ``context_feature_training.txt`` file.
 
 
+Generating files
+~~~~~~~~~~~~~~~~
+
+After training, the model needs feature files to extract word embeddings.
+Be note, here we can use different vocabulary as long as we can extract feature
+from this vocabulary.
+feature files are in the same format as ``label_feature_training.txt``.
+
+
 .. _ExAssist: https://exassist.readthedocs.io/en/latest/
 .. _multi-label: http://manikvarma.org/downloads/XC/XMLRepository.html
