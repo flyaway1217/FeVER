@@ -11,7 +11,7 @@ Overview
 
 The input of this implementation is not the pure text.
 Instead, a multi-label data format is used as the input of our system.
-Because of this, we need to preprocess the text into a suitable format, which is described in `Dataset`_.
+Because of this, we need to preprocess the text into a suitable format, which is described in `Training files`_.
 
 Installation
 ~~~~~~~~~~~~
@@ -43,14 +43,13 @@ After installation, you can directly run our code like:
 
 ``config.ini`` file contains all the configuation for running.
 
-Dataset
-~~~~~~~
-
 A toy dataset is stored in the ``example/toy``.
 Different files in this directory has different usage.
 
-- Training files:
-  - ``context_feature_training.txt``: This file contains all training data in format of multi-label_ data.Each word is mapped to an index by the ``vocabulary.txt`` file.
+Training files
+~~~~~~~~~~~~~~
+
+- ``context_feature_training.txt``: This file contains all training data in format of multi-label_ data.Each word is mapped to an index by the ``vocabulary.txt`` file.
 For example, a file contains following content:
 
 .. code:: console
