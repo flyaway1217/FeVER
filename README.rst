@@ -13,6 +13,18 @@ The input of this implementation is not the pure text.
 Instead, a multi-label data format is used as the input of our system.
 Because of this, we need to preprocess the text into a suitable format, which is described in `Training files`_.
 
+
+Prerequisites
+~~~~~~~~~~~~~
+
+.. code:: console
+
+    pytorch 1.1.0
+    numpy
+    ExAssist
+
+
+
 Installation
 ~~~~~~~~~~~~
 
