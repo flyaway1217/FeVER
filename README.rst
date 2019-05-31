@@ -3,6 +3,8 @@ FeVER
 
 This repository contains the python implementation of the paper **Beyond Context: A New Perspective for Word Embeddings**.
 
+FeVER stands for **Feature embeddings for Vector Representation**.
+
 Before Training
 ---------------
 
